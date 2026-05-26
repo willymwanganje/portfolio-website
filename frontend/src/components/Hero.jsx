@@ -3,12 +3,14 @@ import React from "react";
 function Hero() {
   return (
     <section id="home" style={styles.hero}>
+      <div style={styles.overlay}></div>
+
       <div style={styles.container}>
-        
-        <p style={styles.smallText}>Hello, my name is</p>
+
+        <p style={styles.smallText}>👋 Hello, my name is</p>
 
         <h1 style={styles.name}>
-          Willy Mwangamnje
+          Willy Mwanganje
         </h1>
 
         <h2 style={styles.role}>
@@ -16,12 +18,19 @@ function Hero() {
         </h2>
 
         <p style={styles.desc}>
-          I build data-driven solutions using Python, SQL, Power BI and modern web technologies.
+          I am passionate about transforming data into insights and building modern web applications using Python, SQL, Power BI, and React.
         </p>
 
         <div style={styles.buttons}>
-          <button style={styles.primaryBtn}>View Projects</button>
-          <button style={styles.secondaryBtn}>Contact Me</button>
+
+          <a href="#projects" style={styles.primaryBtn}>
+            View Projects
+          </a>
+
+          <a href="#contact" style={styles.secondaryBtn}>
+            Contact Me
+          </a>
+
         </div>
 
       </div>
@@ -30,70 +39,85 @@ function Hero() {
 }
 
 const styles = {
+
   hero: {
-    height: "90vh",
+    height: "100vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    background: "linear-gradient(135deg, #0f172a, #1e293b)",
+    position: "relative",
+    background: "linear-gradient(135deg, #0b1220, #111827)",
     color: "white",
     textAlign: "center",
-    padding: "20px"
+    padding: "20px",
+    overflow: "hidden"
+  },
+
+  overlay: {
+    position: "absolute",
+    width: "100%",
+    height: "100%",
+    background: "radial-gradient(circle, rgba(56,189,248,0.15) 0%, transparent 70%)"
   },
 
   container: {
-    maxWidth: "700px"
+    maxWidth: "800px",
+    zIndex: 2
   },
 
   smallText: {
-    fontSize: "16px",
+    fontSize: "18px",
     color: "#38bdf8",
     marginBottom: "10px"
   },
 
   name: {
-    fontSize: "50px",
-    margin: "10px 0",
-    fontWeight: "bold"
+    fontSize: "60px",
+    fontWeight: "bold",
+    margin: "10px 0"
   },
 
   role: {
-    fontSize: "22px",
+    fontSize: "24px",
     color: "#cbd5e1",
-    marginBottom: "15px"
+    marginBottom: "20px"
   },
 
   desc: {
-    fontSize: "16px",
+    fontSize: "18px",
     color: "#94a3b8",
-    marginBottom: "25px"
+    marginBottom: "30px",
+    lineHeight: "1.6"
   },
 
   buttons: {
     display: "flex",
     justifyContent: "center",
-    gap: "15px"
+    gap: "15px",
+    flexWrap: "wrap"
   },
 
   primaryBtn: {
-    padding: "10px 20px",
+    padding: "12px 25px",
     backgroundColor: "#38bdf8",
     border: "none",
-    borderRadius: "5px",
-    color: "black",
-    cursor: "pointer",
-    fontWeight: "bold"
+    borderRadius: "8px",
+    color: "#000",
+    fontWeight: "bold",
+    textDecoration: "none",
+    transition: "0.3s"
   },
 
   secondaryBtn: {
-    padding: "10px 20px",
+    padding: "12px 25px",
     backgroundColor: "transparent",
-    border: "1px solid #38bdf8",
-    borderRadius: "5px",
+    border: "2px solid #38bdf8",
+    borderRadius: "8px",
     color: "#38bdf8",
-    cursor: "pointer",
-    fontWeight: "bold"
+    textDecoration: "none",
+    transition: "0.3s"
   }
+
 };
 
 export default Hero;
