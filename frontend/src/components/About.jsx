@@ -13,7 +13,7 @@ function About() {
             <h2 className="mb-4 text-info">About Me</h2>
 
             <p style={{ fontSize: "17px", lineHeight: "1.8", color: "#cbd5e1" }}>
-              I am <strong>Willy Mwangamnje</strong>, a passionate Data Science student currently in the final stage
+              I am <strong>Willy Mwanganje</strong>, a passionate Data Science student currently in the final stage
               of my Bachelor’s degree at the <strong>Eastern Africa Statistical Training Centre (EASTC)</strong>.
             </p>
 
