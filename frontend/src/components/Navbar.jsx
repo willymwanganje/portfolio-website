@@ -3,8 +3,6 @@ import React from "react";
 function Navbar() {
   return (
     <nav style={styles.nav}>
-      <h2 style={styles.logo}>Willy Mwangamnje</h2>
-
       <ul style={styles.links}>
         <li><a href="#home" style={styles.a}>Home</a></li>
         <li><a href="#about" style={styles.a}>About</a></li>
@@ -20,32 +18,37 @@ function Navbar() {
 const styles = {
   nav: {
     display: "flex",
-    justifyContent: "space-between",
+    justifyContent: "flex-start",
     alignItems: "center",
-    padding: "15px 40px",
-    backgroundColor: "#0f172a",
-    color: "white",
-    position: "sticky",
+    padding: "15px 30px",
+    position: "fixed",
     top: 0,
-    zIndex: 1000
-  },
+    left: 0,
+    width: "100%",
+    zIndex: 1000,
 
-  logo: {
-    fontSize: "20px",
-    fontWeight: "bold",
-    color: "#38bdf8"
+    // 🌟 GLASS EFFECT
+    background: "rgba(15, 23, 42, 0.6)",
+    backdropFilter: "blur(10px)",
+    WebkitBackdropFilter: "blur(10px)",
+
+    borderBottom: "1px solid rgba(255,255,255,0.1)"
   },
 
   links: {
     display: "flex",
     listStyle: "none",
-    gap: "20px"
+    gap: "25px",
+    margin: 0,
+    padding: 0
   },
 
   a: {
     textDecoration: "none",
-    color: "white",
-    fontSize: "15px"
+    color: "#e2e8f0",
+    fontSize: "15px",
+    fontWeight: "500",
+    transition: "0.3s"
   }
 };
 
