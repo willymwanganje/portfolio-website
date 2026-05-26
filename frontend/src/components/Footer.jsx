@@ -5,7 +5,7 @@ function Footer() {
     <footer style={{ background: "#020617", color: "white", padding: "30px 0" }}>
       <div className="container text-center">
 
-        <h5 className="text-info">Willy Mwangamnje</h5>
+        <h5 className="text-info">Willy Mwanganje</h5>
 
         <p className="text-secondary">
           Data Scientist | Data Analyst | Web Developer
