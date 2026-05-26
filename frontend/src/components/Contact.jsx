@@ -1,28 +1,33 @@
-const handleSubmit = async (e) => {
-  e.preventDefault();
+import React from "react";
 
-  try {
-    const res = await axios.post(
-      "https://portfolio-website-qb34.onrender.com/api/contact",
-      form
-    );
+function Contact() {
+  return (
+    <section id="contact" className="contact">
+      <h2>Contact Me</h2>
 
-    console.log("SUCCESS RESPONSE:", res.data);
+      <div className="contact-info">
 
-    alert(res.data.message || "Message sent!");
+        <p>
+          📱 WhatsApp / Phone:{" "}
+          <a
+            href="https://wa.me/255626618171"
+            target="_blank"
+            rel="noreferrer"
+          >
+            +255 626 618 171
+          </a>
+        </p>
 
-    setForm({
-      name: "",
-      email: "",
-      message: ""
-    });
+        <p>
+          📧 Email:{" "}
+          <a href="mailto:willymwanganje@gmail.com">
+            willymwanganje@gmail.com
+          </a>
+        </p>
 
-  } catch (error) {
-    console.log("ERROR FULL:", error);
+      </div>
+    </section>
+  );
+}
 
-    alert(
-      error.response?.data?.error ||
-      "Failed to send message"
-    );
-  }
-};
+export default Contact;
