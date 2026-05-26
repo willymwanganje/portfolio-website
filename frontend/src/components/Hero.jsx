@@ -7,10 +7,10 @@ function Hero() {
 
       <div style={styles.container}>
 
-        {/* TEXT SIDE */}
+        {/* TEXT */}
         <div style={styles.textBox}>
 
-          <p style={styles.smallText}>👋 Hello, I am</p>
+          <p style={styles.smallText}>👋 Hello, I'm</p>
 
           <h1 style={styles.name}>Willy Mwanganje</h1>
 
@@ -19,7 +19,7 @@ function Hero() {
           </h2>
 
           <p style={styles.desc}>
-            I specialize in turning data into insights and building modern web applications using Python, SQL, Power BI, Excel, and React.
+            I build data-driven solutions and modern web applications using Python, SQL, Power BI, Excel, and React.
           </p>
 
           <div style={styles.buttons}>
@@ -29,8 +29,9 @@ function Hero() {
 
         </div>
 
-        {/* IMAGE SIDE */}
+        {/* IMAGE */}
         <div style={styles.imageBox}>
+          <div style={styles.glow}></div>
           <img src={profileImg} alt="profile" style={styles.image} />
         </div>
 
