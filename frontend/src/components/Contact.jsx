@@ -1,73 +1,28 @@
-import React, { useState } from "react";
-import axios from "axios";
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-function Contact() {
-  const [form, setForm] = useState({
-    name: "",
-    email: "",
-    message: ""
-  });
+  try {
+    const res = await axios.post(
+      "https://portfolio-website-qb34.onrender.com/api/contact",
+      form
+    );
 
-  const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
-  };
+    console.log("SUCCESS RESPONSE:", res.data);
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    alert(res.data.message || "Message sent!");
 
-    try {
-      await axios.post("https://portfolio-website-qb34.onrender.com/api/contact", form);
+    setForm({
+      name: "",
+      email: "",
+      message: ""
+    });
 
-      alert("Message sent successfully!");
+  } catch (error) {
+    console.log("ERROR FULL:", error);
 
-      setForm({
-        name: "",
-        email: "",
-        message: ""
-      });
-
-    } catch (error) {
-      alert("Failed to send message");
-    }
-  };
-
-  return (
-    <section id="contact" className="contact">
-      <h2>Contact Me</h2>
-
-      <form onSubmit={handleSubmit} className="contact-form">
-
-        <input
-          type="text"
-          name="name"
-          placeholder="Your Name"
-          value={form.name}
-          onChange={handleChange}
-          required
-        />
-
-        <input
-          type="email"
-          name="email"
-          placeholder="Your Email"
-          value={form.email}
-          onChange={handleChange}
-          required
-        />
-
-        <textarea
-          name="message"
-          placeholder="Your Message"
-          value={form.message}
-          onChange={handleChange}
-          required
-        />
-
-        <button type="submit">Send Message</button>
-
-      </form>
-    </section>
-  );
-}
-
-export default Contact;
+    alert(
+      error.response?.data?.error ||
+      "Failed to send message"
+    );
+  }
+};
