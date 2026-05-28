@@ -3,130 +3,109 @@ import profileImg from "../assets/images/profile.jpg";
 
 function Hero() {
   return (
-    <section id="home" style={styles.hero}>
-      <div style={styles.container}>
+    <section
+      id="home"
+      className="d-flex align-items-center"
+      style={{
+        minHeight: "100vh",
+        background: "radial-gradient(circle at top, #1e3a8a, #0f172a, #020617)",
+        color: "#fff",
+        paddingTop: "100px",
+        paddingBottom: "60px"
+      }}
+    >
+      <div className="container">
 
-        {/* TEXT */}
-        <div style={styles.textBox}>
-          <p style={styles.tag}>
-            DATA SCIENCE • DATA ANALYSIS • WEB DEVELOPMENT
-          </p>
+        <div className="row align-items-center g-5">
 
-          <h1 style={styles.title}>
-            Turning Data Into Insights & Building Modern Web Experiences
-          </h1>
+          {/* TEXT SIDE */}
+          <div className="col-lg-7">
 
-          <p style={styles.desc}>
-            I use Python, SQL, Power BI, Excel, and React to create dashboards,
-            analyze data, and build modern responsive web applications.
-          </p>
+            <span
+              style={{
+                fontSize: "12px",
+                letterSpacing: "3px",
+                color: "#60a5fa"
+              }}
+            >
+              DATA SCIENCE • DATA ANALYSIS • WEB DEVELOPMENT
+            </span>
 
-          <div style={styles.buttons}>
-            <a href="#projects" style={styles.primaryBtn}>View Projects</a>
-            <a href="#contact" style={styles.secondaryBtn}>Contact Me</a>
+            <h1 className="fw-bold mt-3" style={{ fontSize: "44px", lineHeight: "1.2" }}>
+              Turning Data Into Insights & Building Modern Web Experiences
+            </h1>
+
+            <p className="mt-3" style={{ color: "#cbd5e1", fontSize: "16px", lineHeight: "1.8" }}>
+              I use Python, SQL, Power BI, Excel, and React to create dashboards,
+              analyze data, and build modern responsive web applications.
+            </p>
+
+            <div className="mt-4 d-flex gap-3 flex-wrap">
+
+              <a
+                href="#projects"
+                className="btn btn-primary px-4 py-2 fw-semibold"
+                style={{
+                  background: "#2563eb",
+                  border: "none",
+                  boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
+                }}
+              >
+                View Projects
+              </a>
+
+              <a
+                href="#contact"
+                className="btn px-4 py-2 fw-semibold"
+                style={{
+                  border: "1px solid #60a5fa",
+                  color: "#60a5fa"
+                }}
+              >
+                Contact Me
+              </a>
+
+            </div>
+
           </div>
-        </div>
 
-        {/* IMAGE */}
-        <div style={styles.imageBox}>
-          <img src={profileImg} alt="profile" style={styles.image} />
-        </div>
+          {/* IMAGE SIDE */}
+          <div className="col-lg-5 text-center">
 
+            <div
+              className="p-3 mx-auto"
+              style={{
+                background: "rgba(15, 23, 42, 0.7)",
+                border: "1px solid rgba(96,165,250,0.2)",
+                borderRadius: "16px",
+                maxWidth: "320px"
+              }}
+            >
+
+              <img
+                src={profileImg}
+                alt="profile"
+                className="img-fluid"
+                style={{
+                  width: "100%",
+                  height: "320px",
+                  objectFit: "cover",
+                  borderRadius: "12px" // 👈 square style (NOT circle)
+                }}
+              />
+
+              <p className="mt-3 mb-0" style={{ color: "#94a3b8", fontSize: "13px" }}>
+                Data Scientist • Analyst • Developer
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </section>
   );
 }
-
-const styles = {
-
-  hero: {
-    minHeight: "100vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-
-    padding: "120px 20px 60px 20px",
-
-    background: "radial-gradient(circle at top, #1e3a8a, #0f172a, #020617)",
-    color: "#fff"
-  },
-
-  container: {
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    maxWidth: "1100px",
-    width: "100%",
-    flexWrap: "wrap",
-    gap: "60px"
-  },
-
-  textBox: {
-    flex: 1,
-    minWidth: "280px"
-  },
-
-  tag: {
-    fontSize: "12px",
-    letterSpacing: "3px",
-    color: "#60a5fa",
-    marginBottom: "15px"
-  },
-
-  title: {
-    fontSize: "44px",
-    fontWeight: "800",
-    lineHeight: "1.2",
-    marginBottom: "20px"
-  },
-
-  desc: {
-    fontSize: "16px",
-    color: "#cbd5e1",
-    lineHeight: "1.8",
-    maxWidth: "520px"
-  },
-
-  buttons: {
-    marginTop: "25px",
-    display: "flex",
-    gap: "12px",
-    flexWrap: "wrap"
-  },
-
-  primaryBtn: {
-    padding: "12px 22px",
-    background: "#2563eb",
-    color: "#fff",
-    textDecoration: "none",
-    borderRadius: "10px",
-    fontWeight: "600",
-    boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
-  },
-
-  secondaryBtn: {
-    padding: "12px 22px",
-    border: "1px solid #60a5fa",
-    color: "#60a5fa",
-    textDecoration: "none",
-    borderRadius: "10px"
-  },
-
-  imageBox: {
-    flex: 1,
-    display: "flex",
-    justifyContent: "center",
-    minWidth: "280px"
-  },
-
-  image: {
-    width: "340px",
-    height: "340px",
-    objectFit: "cover",
-    borderRadius: "50%",
-    border: "4px solid rgba(96,165,250,0.5)",
-    boxShadow: "0 30px 60px rgba(0,0,0,0.6)"
-  }
-};
 
 export default Hero;
