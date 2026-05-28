@@ -6,23 +6,21 @@ function Hero() {
     <section id="home" style={styles.hero}>
       <div style={styles.container}>
 
-        {/* TEXT */}
+        {/* LEFT TEXT */}
         <div style={styles.textBox}>
-          <p style={styles.smallText}>👋 Hello, I'm</p>
+          <p style={styles.smallText}>DATA SCIENTIST • DATA ANALYST • DEVELOPER</p>
 
-          <h1 style={styles.name}>Willy Mwanganje</h1>
-
-          <h2 style={styles.role}>
-            Data Scientist | Data Analyst | Web Developer
-          </h2>
+          <h1 style={styles.name}>
+            Building Data-Driven & Modern Web Solutions
+          </h1>
 
           <p style={styles.desc}>
-            I build data-driven solutions and modern web applications using Python, SQL, Power BI, Excel, and React.
+            I specialize in Python, SQL, Power BI, Excel and React to turn data into meaningful insights and interactive dashboards.
           </p>
 
           <div style={styles.buttons}>
-            <a href="#projects" style={styles.primaryBtn}>View Projects</a>
-            <a href="#contact" style={styles.secondaryBtn}>Contact Me</a>
+            <a href="#projects" style={styles.primaryBtn}>View Work</a>
+            <a href="#contact" style={styles.secondaryBtn}>Get In Touch</a>
           </div>
         </div>
 
@@ -43,9 +41,9 @@ const styles = {
     alignItems: "center",
     justifyContent: "center",
 
-    padding: "110px 20px 60px 20px", // 👈 important (chini ya navbar)
+    padding: "110px 20px 60px 20px",
 
-    background: "linear-gradient(135deg, #0f172a, #1d4ed8, #2563eb)",
+    background: "radial-gradient(circle at top, #1e3a8a, #0f172a, #020617)",
     color: "#fff"
   },
 
@@ -56,7 +54,7 @@ const styles = {
     maxWidth: "1100px",
     width: "100%",
     flexWrap: "wrap",
-    gap: "40px"
+    gap: "50px"
   },
 
   textBox: {
@@ -65,30 +63,23 @@ const styles = {
   },
 
   smallText: {
-    color: "#93c5fd",
-    fontSize: "18px",
-    marginBottom: "10px"
+    fontSize: "12px",
+    letterSpacing: "2px",
+    color: "#60a5fa",
+    marginBottom: "15px"
   },
 
   name: {
-    fontSize: "52px",
+    fontSize: "48px",
     fontWeight: "800",
-    margin: "10px 0",
-    background: "linear-gradient(90deg, #60a5fa, #ffffff)",
-    WebkitBackgroundClip: "text",
-    WebkitTextFillColor: "transparent"
-  },
-
-  role: {
-    fontSize: "18px",
-    color: "#bfdbfe",
-    marginBottom: "15px"
+    lineHeight: "1.2",
+    marginBottom: "20px"
   },
 
   desc: {
     fontSize: "16px",
     lineHeight: "1.8",
-    color: "#e0f2fe",
+    color: "#cbd5e1",
     maxWidth: "500px"
   },
 
@@ -100,21 +91,21 @@ const styles = {
   },
 
   primaryBtn: {
-    padding: "12px 22px",
-    background: "linear-gradient(90deg, #2563eb, #60a5fa)",
+    padding: "12px 24px",
+    background: "#2563eb",
     color: "#fff",
     textDecoration: "none",
-    borderRadius: "10px",
+    borderRadius: "8px",
     fontWeight: "600",
     boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
   },
 
   secondaryBtn: {
-    padding: "12px 22px",
-    border: "1px solid #93c5fd",
-    color: "#93c5fd",
+    padding: "12px 24px",
+    border: "1px solid #60a5fa",
+    color: "#60a5fa",
     textDecoration: "none",
-    borderRadius: "10px"
+    borderRadius: "8px"
   },
 
   imageBox: {
@@ -125,12 +116,12 @@ const styles = {
   },
 
   image: {
-    width: "300px",
-    height: "300px",
+    width: "320px",
+    height: "320px",
     objectFit: "cover",
     borderRadius: "50%",
-    border: "5px solid rgba(96,165,250,0.6)",
-    boxShadow: "0 20px 40px rgba(0,0,0,0.4)"
+    border: "3px solid rgba(96,165,250,0.6)",
+    boxShadow: "0 25px 50px rgba(0,0,0,0.5)"
   }
 };
 

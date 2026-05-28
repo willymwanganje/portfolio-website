@@ -1,62 +1,128 @@
 import React from "react";
+import profileImg from "../assets/images/profile.jpg";
 
-function Navbar() {
+function Hero() {
   return (
-    <nav style={styles.nav}>
-      <div style={styles.logo}>Willy.dev</div>
+    <section id="home" style={styles.hero}>
+      <div style={styles.container}>
 
-      <ul style={styles.links}>
-        <li><a href="#home" style={styles.a}>Home</a></li>
-        <li><a href="#about" style={styles.a}>About</a></li>
-        <li><a href="#skills" style={styles.a}>Skills</a></li>
-        <li><a href="#projects" style={styles.a}>Projects</a></li>
-        <li><a href="#contact" style={styles.a}>Contact</a></li>
-      </ul>
-    </nav>
+        {/* LEFT TEXT */}
+        <div style={styles.textBox}>
+          <p style={styles.smallText}>DATA SCIENTIST • DATA ANALYST • DEVELOPER</p>
+
+          <h1 style={styles.name}>
+            Building Data-Driven & Modern Web Solutions
+          </h1>
+
+          <p style={styles.desc}>
+            I specialize in Python, SQL, Power BI, Excel and React to turn data into meaningful insights and interactive dashboards.
+          </p>
+
+          <div style={styles.buttons}>
+            <a href="#projects" style={styles.primaryBtn}>View Work</a>
+            <a href="#contact" style={styles.secondaryBtn}>Get In Touch</a>
+          </div>
+        </div>
+
+        {/* IMAGE */}
+        <div style={styles.imageBox}>
+          <img src={profileImg} alt="profile" style={styles.image} />
+        </div>
+
+      </div>
+    </section>
   );
 }
 
 const styles = {
-  nav: {
+  hero: {
+    minHeight: "100vh",
     display: "flex",
-    justifyContent: "space-between",
     alignItems: "center",
-    padding: "14px 30px",
-    position: "fixed",
-    top: 0,
-    left: 0,
-    width: "100%",
-    zIndex: 1000,
+    justifyContent: "center",
 
-    background: "rgba(10, 15, 30, 0.75)",
-    backdropFilter: "blur(14px)",
-    WebkitBackdropFilter: "blur(14px)",
+    padding: "110px 20px 60px 20px",
 
-    borderBottom: "1px solid rgba(96, 165, 250, 0.25)"
+    background: "radial-gradient(circle at top, #1e3a8a, #0f172a, #020617)",
+    color: "#fff"
   },
 
-  logo: {
-    color: "#60a5fa",
-    fontSize: "18px",
-    fontWeight: "800",
-    letterSpacing: "1px"
-  },
-
-  links: {
+  container: {
     display: "flex",
-    listStyle: "none",
-    gap: "22px",
-    margin: 0,
-    padding: 0
+    alignItems: "center",
+    justifyContent: "space-between",
+    maxWidth: "1100px",
+    width: "100%",
+    flexWrap: "wrap",
+    gap: "50px"
   },
 
-  a: {
+  textBox: {
+    flex: 1,
+    minWidth: "280px"
+  },
+
+  smallText: {
+    fontSize: "12px",
+    letterSpacing: "2px",
+    color: "#60a5fa",
+    marginBottom: "15px"
+  },
+
+  name: {
+    fontSize: "48px",
+    fontWeight: "800",
+    lineHeight: "1.2",
+    marginBottom: "20px"
+  },
+
+  desc: {
+    fontSize: "16px",
+    lineHeight: "1.8",
+    color: "#cbd5e1",
+    maxWidth: "500px"
+  },
+
+  buttons: {
+    marginTop: "25px",
+    display: "flex",
+    gap: "12px",
+    flexWrap: "wrap"
+  },
+
+  primaryBtn: {
+    padding: "12px 24px",
+    background: "#2563eb",
+    color: "#fff",
     textDecoration: "none",
-    color: "#e0f2fe",
-    fontSize: "14px",
-    fontWeight: "500",
-    transition: "0.3s"
+    borderRadius: "8px",
+    fontWeight: "600",
+    boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
+  },
+
+  secondaryBtn: {
+    padding: "12px 24px",
+    border: "1px solid #60a5fa",
+    color: "#60a5fa",
+    textDecoration: "none",
+    borderRadius: "8px"
+  },
+
+  imageBox: {
+    flex: 1,
+    display: "flex",
+    justifyContent: "center",
+    minWidth: "280px"
+  },
+
+  image: {
+    width: "320px",
+    height: "320px",
+    objectFit: "cover",
+    borderRadius: "50%",
+    border: "3px solid rgba(96,165,250,0.6)",
+    boxShadow: "0 25px 50px rgba(0,0,0,0.5)"
   }
 };
 
-export default Navbar;
+export default Hero;
