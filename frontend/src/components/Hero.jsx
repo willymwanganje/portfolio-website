@@ -42,9 +42,11 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "120px 20px 60px 20px", // 👈 FIX: kushuka chini ya navbar
-    background: "#ffffff", // 👈 WHITE UI
-    color: "#111827"
+
+    padding: "110px 20px 60px 20px", // 👈 important (chini ya navbar)
+
+    background: "linear-gradient(135deg, #0f172a, #1d4ed8, #2563eb)",
+    color: "#fff"
   },
 
   container: {
@@ -53,7 +55,8 @@ const styles = {
     justifyContent: "space-between",
     maxWidth: "1100px",
     width: "100%",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
+    gap: "40px"
   },
 
   textBox: {
@@ -62,50 +65,56 @@ const styles = {
   },
 
   smallText: {
+    color: "#93c5fd",
     fontSize: "18px",
-    marginBottom: "10px",
-    color: "#6b7280"
+    marginBottom: "10px"
   },
 
   name: {
-    fontSize: "44px",
-    fontWeight: "bold",
-    margin: "10px 0"
+    fontSize: "52px",
+    fontWeight: "800",
+    margin: "10px 0",
+    background: "linear-gradient(90deg, #60a5fa, #ffffff)",
+    WebkitBackgroundClip: "text",
+    WebkitTextFillColor: "transparent"
   },
 
   role: {
     fontSize: "18px",
-    color: "#2563eb",
+    color: "#bfdbfe",
     marginBottom: "15px"
   },
 
   desc: {
     fontSize: "16px",
-    lineHeight: "1.7",
-    maxWidth: "500px",
-    color: "#374151"
+    lineHeight: "1.8",
+    color: "#e0f2fe",
+    maxWidth: "500px"
   },
 
   buttons: {
-    marginTop: "20px",
+    marginTop: "25px",
     display: "flex",
-    gap: "12px"
+    gap: "12px",
+    flexWrap: "wrap"
   },
 
   primaryBtn: {
-    padding: "10px 20px",
-    background: "#111827",
+    padding: "12px 22px",
+    background: "linear-gradient(90deg, #2563eb, #60a5fa)",
     color: "#fff",
     textDecoration: "none",
-    borderRadius: "6px"
+    borderRadius: "10px",
+    fontWeight: "600",
+    boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
   },
 
   secondaryBtn: {
-    padding: "10px 20px",
-    border: "1px solid #111827",
-    color: "#111827",
+    padding: "12px 22px",
+    border: "1px solid #93c5fd",
+    color: "#93c5fd",
     textDecoration: "none",
-    borderRadius: "6px"
+    borderRadius: "10px"
   },
 
   imageBox: {
@@ -120,7 +129,8 @@ const styles = {
     height: "300px",
     objectFit: "cover",
     borderRadius: "50%",
-    border: "4px solid #e5e7eb"
+    border: "5px solid rgba(96,165,250,0.6)",
+    boxShadow: "0 20px 40px rgba(0,0,0,0.4)"
   }
 };
 
