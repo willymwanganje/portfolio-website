@@ -17,29 +17,36 @@ function Navbar() {
 const styles = {
   nav: {
     position: "fixed",
-    top: "18px",
+    top: "10px",
     left: "50%",
     transform: "translateX(-50%)",
 
-    background: "rgba(15, 23, 42, 0.65)",
+    width: "fit-content",
+    maxWidth: "95%",
+
+    background: "rgba(15, 23, 42, 0.75)",
     backdropFilter: "blur(18px)",
     WebkitBackdropFilter: "blur(18px)",
 
     border: "1px solid rgba(96, 165, 250, 0.25)",
     borderRadius: "999px",
 
-    padding: "10px 18px",
+    padding: "10px 16px",
     zIndex: 1000,
 
-    boxShadow: "0 10px 30px rgba(0,0,0,0.35)"
+    boxShadow: "0 10px 30px rgba(0,0,0,0.35)",
+
+    overflowX: "auto",   // 👈 IMPORTANT FIX
+    whiteSpace: "nowrap" // 👈 IMPORTANT FIX
   },
 
   links: {
     display: "flex",
-    gap: "22px",
+    gap: "18px",
     listStyle: "none",
     margin: 0,
-    padding: 0
+    padding: 0,
+    alignItems: "center"
   },
 
   a: {
@@ -49,7 +56,7 @@ const styles = {
     fontWeight: "500",
     padding: "6px 10px",
     borderRadius: "8px",
-    transition: "0.25s"
+    whiteSpace: "nowrap" // 👈 prevents text breaking
   }
 };
 
