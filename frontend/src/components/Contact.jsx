@@ -1,4 +1,6 @@
 import React from "react";
+import { FaWhatsapp, FaYoutube, FaGoogle } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Contact() {
   return (
@@ -15,13 +17,13 @@ function Contact() {
         {/* HEADER */}
         <div className="text-center mb-5">
           <span style={{ color: "#60a5fa", letterSpacing: "3px", fontSize: "12px" }}>
-            GET IN TOUCH
+            CONNECT WITH ME
           </span>
 
-          <h2 className="fw-bold mt-2">Contact Me</h2>
+          <h2 className="fw-bold mt-2">Contact & Learning Platform</h2>
 
           <p style={{ color: "#94a3b8" }}>
-            Let’s connect for opportunities, collaboration, or mentorship
+            Data Analyst Instructor | YouTube Educator | Open for collaboration
           </p>
         </div>
 
@@ -29,165 +31,151 @@ function Contact() {
 
           {/* WHATSAPP */}
           <div className="col-md-4">
-
-            <div
-              className="p-4 text-center h-100"
-              style={{
-                background: "rgba(15, 23, 42, 0.75)",
-                border: "1px solid rgba(96,165,250,0.15)",
-                borderRadius: "18px",
-                transition: "0.3s",
-                cursor: "pointer"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow =
-                  "0 20px 40px rgba(0,0,0,0.5)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
-              }}
+            <a
+              href="https://wa.me/255626618171"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none" }}
             >
-
-              <div style={{ fontSize: "30px" }}>📱</div>
-
-              <h5 className="mt-3">WhatsApp / Phone</h5>
-
-              <p style={{ color: "#94a3b8" }}>
-                Quick response for collaboration or job offers
-              </p>
-
-              <a
-                href="https://wa.me/255626618171"
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "#22c55e", textDecoration: "none", fontWeight: "600" }}
+              <div
+                className="p-4 text-center h-100"
+                style={{
+                  background: "rgba(15, 23, 42, 0.75)",
+                  border: "1px solid rgba(34,197,94,0.3)",
+                  borderRadius: "18px",
+                  transition: "0.3s",
+                  cursor: "pointer"
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-8px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
               >
-                +255 626 618 171
-              </a>
 
-            </div>
+                <FaWhatsapp size={40} color="#25D366" />
+
+                <h5 className="mt-3">WhatsApp</h5>
+
+                <p style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  Quick response for training, mentorship or collaboration
+                </p>
+
+                <span style={{ color: "#22c55e", fontWeight: "600" }}>
+                  Chat Now
+                </span>
+
+              </div>
+            </a>
           </div>
 
           {/* EMAIL */}
           <div className="col-md-4">
-
-            <div
-              className="p-4 text-center h-100"
-              style={{
-                background: "rgba(15, 23, 42, 0.75)",
-                border: "1px solid rgba(96,165,250,0.15)",
-                borderRadius: "18px",
-                transition: "0.3s",
-                cursor: "pointer"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow =
-                  "0 20px 40px rgba(0,0,0,0.5)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
-              }}
+            <a
+              href="mailto:willymwanganje@gmail.com"
+              style={{ textDecoration: "none" }}
             >
-
-              <div style={{ fontSize: "30px" }}>📧</div>
-
-              <h5 className="mt-3">Email</h5>
-
-              <p style={{ color: "#94a3b8" }}>
-                For formal opportunities and professional communication
-              </p>
-
-              <a
-                href="mailto:willymwanganje@gmail.com"
-                style={{ color: "#60a5fa", textDecoration: "none", fontWeight: "600" }}
+              <div
+                className="p-4 text-center h-100"
+                style={{
+                  background: "rgba(15, 23, 42, 0.75)",
+                  border: "1px solid rgba(96,165,250,0.3)",
+                  borderRadius: "18px",
+                  transition: "0.3s",
+                  cursor: "pointer"
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-8px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
               >
-                willymwanganje@gmail.com
-              </a>
 
-            </div>
+                <MdEmail size={40} color="#60a5fa" />
+
+                <h5 className="mt-3">Gmail</h5>
+
+                <p style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  For professional communication & business inquiries
+                </p>
+
+                <span style={{ color: "#60a5fa", fontWeight: "600" }}>
+                  Send Email
+                </span>
+
+              </div>
+            </a>
           </div>
 
           {/* YOUTUBE */}
           <div className="col-md-4">
-
-            <div
-              className="p-4 text-center h-100"
-              style={{
-                background: "rgba(15, 23, 42, 0.75)",
-                border: "1px solid rgba(96,165,250,0.15)",
-                borderRadius: "18px",
-                transition: "0.3s",
-                cursor: "pointer"
-              }}
-              onMouseEnter={(e) => {
-                e.currentTarget.style.transform = "translateY(-8px)";
-                e.currentTarget.style.boxShadow =
-                  "0 20px 40px rgba(0,0,0,0.5)";
-              }}
-              onMouseLeave={(e) => {
-                e.currentTarget.style.transform = "translateY(0)";
-                e.currentTarget.style.boxShadow = "none";
-              }}
+            <a
+              href="https://youtube.com/@yourchannel"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: "none" }}
             >
-
-              <div style={{ fontSize: "30px" }}>🎥</div>
-
-              <h5 className="mt-3">YouTube Channel</h5>
-
-              <p style={{ color: "#94a3b8" }}>
-                Free tutorials on Data Analysis, Python & BI tools
-              </p>
-
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                rel="noreferrer"
-                style={{ color: "#ef4444", textDecoration: "none", fontWeight: "600" }}
+              <div
+                className="p-4 text-center h-100"
+                style={{
+                  background: "rgba(15, 23, 42, 0.75)",
+                  border: "1px solid rgba(239,68,68,0.3)",
+                  borderRadius: "18px",
+                  transition: "0.3s",
+                  cursor: "pointer"
+                }}
+                onMouseEnter={(e) => {
+                  e.currentTarget.style.transform = "translateY(-8px)";
+                }}
+                onMouseLeave={(e) => {
+                  e.currentTarget.style.transform = "translateY(0)";
+                }}
               >
-                Watch Free Courses
-              </a>
 
-            </div>
+                <FaYoutube size={40} color="#FF0000" />
+
+                <h5 className="mt-3">YouTube</h5>
+
+                <p style={{ color: "#94a3b8", fontSize: "14px" }}>
+                  Free Data Analysis tutorials & BI training courses
+                </p>
+
+                <span style={{ color: "#ef4444", fontWeight: "600" }}>
+                  Watch Lessons
+                </span>
+
+              </div>
+            </a>
           </div>
 
         </div>
 
-        {/* CTA BOTTOM */}
+        {/* INSTRUCTOR BADGE */}
         <div className="text-center mt-5">
 
           <div
             className="p-4 mx-auto"
             style={{
-              maxWidth: "700px",
+              maxWidth: "750px",
               background: "rgba(15, 23, 42, 0.6)",
               border: "1px solid rgba(96,165,250,0.15)",
               borderRadius: "18px"
             }}
           >
 
-            <h5 className="fw-bold">Open for Opportunities</h5>
+            <FaGoogle size={28} color="#60a5fa" />
+
+            <h5 className="fw-bold mt-3">
+              Data Analyst Instructor & Mentor
+            </h5>
 
             <p style={{ color: "#94a3b8" }}>
-              I am currently available for internships, freelance work, and full-time roles
-              in Data Science, Data Analysis, and Web Development.
+              I teach practical Data Analysis, Python, SQL, Excel, and Power BI
+              through real-world projects on YouTube. Open for training, mentorship,
+              and collaboration opportunities.
             </p>
-
-            <a
-              href="#"
-              className="btn mt-2"
-              style={{
-                background: "#2563eb",
-                color: "#fff",
-                padding: "10px 20px",
-                borderRadius: "10px"
-              }}
-            >
-              Hire Me
-            </a>
 
           </div>
 
