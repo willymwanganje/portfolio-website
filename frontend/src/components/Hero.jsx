@@ -31,7 +31,6 @@ function Hero() {
               }}
             >
 
-              {/* TAG */}
               <span
                 style={{
                   fontSize: "12px",
@@ -42,70 +41,24 @@ function Hero() {
                 DATA SCIENCE • DATA ANALYSIS • WEB DEVELOPMENT
               </span>
 
-              {/* TITLE */}
               <h1 className="fw-bold mt-3" style={{ fontSize: "42px", lineHeight: "1.2" }}>
-                Transforming Data Into Insights & Building Modern Digital Solutions
+                Transforming Data Into Insights & Building Modern Solutions
               </h1>
 
-              {/* DESCRIPTION */}
-              <p
-                className="mt-3"
-                style={{
-                  color: "#cbd5e1",
-                  fontSize: "16px",
-                  lineHeight: "1.9"
-                }}
-              >
-                I specialize in turning raw data into meaningful insights using Python,
-                SQL, Excel, and Power BI, and building clean, responsive web applications
-                with React.
+              <p className="mt-3" style={{ color: "#cbd5e1", fontSize: "16px", lineHeight: "1.9" }}>
+                I specialize in Python, SQL, Power BI, Excel, and React to turn data into
+                meaningful insights and build responsive web applications.
               </p>
 
-              <p
-                style={{
-                  color: "#94a3b8",
-                  fontSize: "15px",
-                  lineHeight: "1.8"
-                }}
-              >
-                I focus on clarity, accuracy, and practical solutions that support
-                better decision-making in real-world environments.
+              <p style={{ color: "#94a3b8", fontSize: "15px" }}>
+                Focused on clarity, problem solving, and delivering real-world impact.
               </p>
-
-              {/* BUTTONS */}
-              <div className="mt-4 d-flex gap-3 flex-wrap">
-
-                <a
-                  href="#projects"
-                  className="btn px-4 py-2 fw-semibold"
-                  style={{
-                    background: "#2563eb",
-                    color: "#fff",
-                    borderRadius: "10px",
-                    boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
-                  }}
-                >
-                  View Projects
-                </a>
-
-                <a
-                  href="#contact"
-                  className="btn px-4 py-2 fw-semibold"
-                  style={{
-                    border: "1px solid #60a5fa",
-                    color: "#60a5fa",
-                    borderRadius: "10px"
-                  }}
-                >
-                  Contact Me
-                </a>
-
-              </div>
 
             </div>
+
           </div>
 
-          {/* IMAGE CARD */}
+          {/* IMAGE + BUTTONS */}
           <div className="col-lg-5 text-center">
 
             <div
@@ -118,6 +71,7 @@ function Hero() {
               }}
             >
 
+              {/* IMAGE */}
               <img
                 src={profileImg}
                 alt="profile"
@@ -126,13 +80,39 @@ function Hero() {
                   width: "100%",
                   height: "340px",
                   objectFit: "cover",
-                  borderRadius: "14px" // square modern look
+                  borderRadius: "14px"
                 }}
               />
 
-              <p className="mt-3 mb-0" style={{ color: "#94a3b8", fontSize: "13px" }}>
-                Data Scientist • Data Analyst • Web Developer
-              </p>
+              {/* BUTTONS BELOW IMAGE */}
+              <div className="mt-3 d-flex gap-2 justify-content-center flex-wrap">
+
+                <a
+                  href="#projects"
+                  className="btn px-3 py-2 fw-semibold"
+                  style={{
+                    background: "#2563eb",
+                    color: "#fff",
+                    borderRadius: "10px",
+                    boxShadow: "0 10px 25px rgba(37,99,235,0.3)"
+                  }}
+                >
+                  View Projects
+                </a>
+
+                <a
+                  href="#contact"
+                  className="btn px-3 py-2 fw-semibold"
+                  style={{
+                    border: "1px solid #60a5fa",
+                    color: "#60a5fa",
+                    borderRadius: "10px"
+                  }}
+                >
+                  Contact Me
+                </a>
+
+              </div>
 
             </div>
 
