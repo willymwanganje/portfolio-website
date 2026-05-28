@@ -42,9 +42,9 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "80px 20px",
-    background: "#0f172a",
-    color: "#fff"
+    padding: "120px 20px 60px 20px", // 👈 FIX: kushuka chini ya navbar
+    background: "#ffffff", // 👈 WHITE UI
+    color: "#111827"
   },
 
   container: {
@@ -63,46 +63,47 @@ const styles = {
 
   smallText: {
     fontSize: "18px",
-    marginBottom: "10px"
+    marginBottom: "10px",
+    color: "#6b7280"
   },
 
   name: {
-    fontSize: "42px",
+    fontSize: "44px",
     fontWeight: "bold",
     margin: "10px 0"
   },
 
   role: {
-    fontSize: "20px",
-    color: "#38bdf8",
+    fontSize: "18px",
+    color: "#2563eb",
     marginBottom: "15px"
   },
 
   desc: {
     fontSize: "16px",
-    lineHeight: "1.6",
-    maxWidth: "500px"
+    lineHeight: "1.7",
+    maxWidth: "500px",
+    color: "#374151"
   },
 
   buttons: {
     marginTop: "20px",
     display: "flex",
-    gap: "10px"
+    gap: "12px"
   },
 
   primaryBtn: {
     padding: "10px 20px",
-    background: "#38bdf8",
-    color: "#000",
+    background: "#111827",
+    color: "#fff",
     textDecoration: "none",
-    borderRadius: "6px",
-    fontWeight: "bold"
+    borderRadius: "6px"
   },
 
   secondaryBtn: {
     padding: "10px 20px",
-    border: "1px solid #38bdf8",
-    color: "#38bdf8",
+    border: "1px solid #111827",
+    color: "#111827",
     textDecoration: "none",
     borderRadius: "6px"
   },
@@ -115,11 +116,11 @@ const styles = {
   },
 
   image: {
-    width: "280px",
-    height: "280px",
+    width: "300px",
+    height: "300px",
     objectFit: "cover",
     borderRadius: "50%",
-    border: "3px solid #38bdf8"
+    border: "4px solid #e5e7eb"
   }
 };
 

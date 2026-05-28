@@ -18,7 +18,7 @@ function Navbar() {
 const styles = {
   nav: {
     display: "flex",
-    justifyContent: "flex-start",
+    justifyContent: "center",
     alignItems: "center",
     padding: "15px 30px",
     position: "fixed",
@@ -27,12 +27,9 @@ const styles = {
     width: "100%",
     zIndex: 1000,
 
-    // 🌟 GLASS EFFECT
-    background: "rgba(15, 23, 42, 0.6)",
-    backdropFilter: "blur(10px)",
-    WebkitBackdropFilter: "blur(10px)",
-
-    borderBottom: "1px solid rgba(255,255,255,0.1)"
+    background: "#ffffff",
+    borderBottom: "1px solid #e5e7eb",
+    boxShadow: "0 2px 10px rgba(0,0,0,0.05)"
   },
 
   links: {
@@ -45,10 +42,9 @@ const styles = {
 
   a: {
     textDecoration: "none",
-    color: "#e2e8f0",
+    color: "#111827",
     fontSize: "15px",
-    fontWeight: "500",
-    transition: "0.3s"
+    fontWeight: "500"
   }
 };
 
