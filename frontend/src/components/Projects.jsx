@@ -8,6 +8,8 @@ import project3_2 from "../assets/images/project3_2.png";
 import project3_3 from "../assets/images/project3_3.png";
 // Project 4 image
 import project4 from "../assets/images/project4.png"; 
+// Project 5 image (Energy Duration Predictor - add a screenshot of the dashboard here)
+import project5 from "../assets/images/project5.png"; 
 
 // Simple Carousel Component for Project Cards
 const ProjectCarousel = ({ images }) => {
@@ -87,6 +89,18 @@ function Projects() {
         { name: "Streamlit", color: "#ff4b4b" },
         { name: "Python", color: "#2563eb" },
         { name: "Automated EDA", color: "#8b5cf6" }
+      ]
+    },
+    {
+      image: project5,
+      title: "Energy Duration Predictor",
+      link: "https://group-26-project-vhpposimv82sput8ud6t38.streamlit.app/",
+      isLive: true,
+      description: "A machine learning system that predicts how long prepaid (LUKU) household electricity will last, in days, hours and minutes, based on appliance ownership, wattage and usage patterns. Trained on survey data from 370 households in Dar es Salaam using a Random Forest model (R\u00b2 = 0.918), deployed as an interactive Streamlit dashboard.",
+      tags: [
+        { name: "Streamlit", color: "#ff4b4b" },
+        { name: "Random Forest", color: "#2563eb" },
+        { name: "scikit-learn", color: "#0ea5e9" }
       ]
     }
   ];
