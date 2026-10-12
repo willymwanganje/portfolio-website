@@ -48,7 +48,7 @@ function About() {
             >
 
               <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#cbd5e1" }}>
-                I am <strong style={{ color: "#60a5fa" }}>Willy Mwanganje</strong>, a final-year Data Science student at
+                I am <strong style={{ color: "#60a5fa" }}>Willy Mwanganje</strong>, a Data Science graduate from
                 <strong> EASTC</strong>. I specialize in transforming raw data into meaningful insights and building modern web applications.
               </p>
 
@@ -74,7 +74,7 @@ function About() {
                     border: "1px solid rgba(34,197,94,0.3)"
                   }}
                 >
-                  ✔ Available for Internship / Full-time Work
+                  ✔ Available for Full-time Work
                 </span>
               </div>
 
@@ -96,7 +96,7 @@ function About() {
               <h4 style={{ color: "#60a5fa" }}>Quick Profile</h4>
 
               <div className="mt-3 text-start" style={{ color: "#cbd5e1" }}>
-                <p>🎓 Final Year Data Science Student</p>
+                <p>🎓 Data Science Graduate</p>
                 <p>🏫 EASTC (Tanzania)</p>
                 <p>📊 Data Analyst & Visualization</p>
                 <p>💻 React & Web Development</p>
