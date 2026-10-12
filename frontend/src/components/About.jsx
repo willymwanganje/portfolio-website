@@ -53,13 +53,19 @@ function About() {
               </p>
 
               <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#cbd5e1" }}>
+                I currently serve as a <strong>Monitoring, Evaluation and Learning (MEL) Officer (Intern)</strong> at the
+                <strong> Rice Council of Tanzania (RCT)</strong>.
+              </p>
+
+              <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#cbd5e1" }}>
                 My skills include <strong>Python, SQL, Excel, Power BI, React, and Data Visualization</strong>.
                 I enjoy solving real-world problems using data-driven approaches.
               </p>
 
               <p style={{ fontSize: "16px", lineHeight: "1.9", color: "#cbd5e1" }}>
-                I am currently <strong style={{ color: "#22c55e" }}>actively seeking opportunities</strong> in Data Analysis,
-                Data Science, and Web Development roles where I can contribute and grow.
+                I am open to considering suitable opportunities in Data Analysis, Data Science, and Web Development,
+                including <strong>remote, part-time, or other flexible arrangements</strong> that align with my skills
+                and are compatible with my current responsibilities at RCT.
               </p>
 
               {/* BADGE */}
@@ -74,7 +80,7 @@ function About() {
                     border: "1px solid rgba(34,197,94,0.3)"
                   }}
                 >
-                  ✔ Available for Full-time Work
+                  ✔ Open to Suitable Flexible Opportunities
                 </span>
               </div>
 
@@ -98,6 +104,7 @@ function About() {
               <div className="mt-3 text-start" style={{ color: "#cbd5e1" }}>
                 <p>🎓 Data Science Graduate</p>
                 <p>🏫 EASTC (Tanzania)</p>
+                <p>📈 MEL Officer (Intern) — RCT</p>
                 <p>📊 Data Analyst & Visualization</p>
                 <p>💻 React & Web Development</p>
                 <p>📍 Dar es Salaam, Tanzania</p>
