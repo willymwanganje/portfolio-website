@@ -15,19 +15,19 @@ function Qualifications() {
         {/* HEADER */}
         <div className="text-center mb-5">
           <span style={{ color: "#60a5fa", letterSpacing: "3px", fontSize: "12px" }}>
-            EDUCATION & TRAINING
+            EDUCATION, EXPERIENCE & TRAINING
           </span>
 
           <h2 className="fw-bold mt-2">My Qualifications</h2>
 
           <p style={{ color: "#94a3b8" }}>
-            Academic background and hands-on training in Data Science and Development
+            Academic background, professional experience, and practical training in Data Science and Development
           </p>
         </div>
 
         <div className="row justify-content-center g-4">
 
-          {/* CARD 1 */}
+          {/* CARD 1: EDUCATION */}
           <div className="col-lg-8">
             <div className="qual-card">
 
@@ -42,18 +42,43 @@ function Qualifications() {
               </p>
 
               <p style={{ color: "#94a3b8", fontSize: "14px", lineHeight: "1.7" }}>
-                Final-year student specializing in data analysis, statistical modeling,
-                and data-driven decision making using modern tools and techniques.
+                Graduated with a focus on data analysis, statistical modeling,
+                and data-driven decision-making using modern tools and techniques.
               </p>
 
               <span className="badge bg-primary">
-                2023 - 2026 (Final Year)
+                2023 - 2026
               </span>
 
             </div>
           </div>
 
-          {/* CARD 2 */}
+          {/* CARD 2: CURRENT INTERNSHIP */}
+          <div className="col-lg-8">
+            <div className="qual-card">
+
+              <i className="bi bi-clipboard-data-fill text-success fs-3"></i>
+
+              <h5 className="fw-bold mt-3" style={{ color: "#60a5fa" }}>
+                Monitoring, Evaluation and Learning (MEL) Officer (Intern)
+              </h5>
+
+              <p style={{ color: "#cbd5e1", marginBottom: "6px" }}>
+                Rice Council of Tanzania (RCT)
+              </p>
+
+              <p style={{ color: "#94a3b8", fontSize: "14px", lineHeight: "1.7" }}>
+                Current internship providing professional experience in Monitoring, Evaluation and Learning (MEL).
+              </p>
+
+              <span className="badge bg-success">
+                August 2026 - Present
+              </span>
+
+            </div>
+          </div>
+
+          {/* CARD 3: DATA ANALYSIS TRAINING */}
           <div className="col-lg-8">
             <div className="qual-card">
 
@@ -79,7 +104,7 @@ function Qualifications() {
             </div>
           </div>
 
-          {/* CARD 3 */}
+          {/* CARD 4: WEB DEVELOPMENT */}
           <div className="col-lg-8">
             <div className="qual-card">
 

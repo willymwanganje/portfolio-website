@@ -15,17 +15,26 @@ function Skills() {
         {/* TITLE */}
         <div className="text-center mb-5">
           <span style={{ color: "#60a5fa", letterSpacing: "3px", fontSize: "12px" }}>
-            TECHNICAL EXPERTISE
+            PROFESSIONAL & TECHNICAL EXPERTISE
           </span>
 
           <h2 className="fw-bold mt-2">My Skills</h2>
 
           <p style={{ color: "#94a3b8" }}>
-            Tools I use for Data Analysis, BI and Web Development
+            Tools and areas I apply across data analysis, MEL, BI, and web development
           </p>
         </div>
 
         <div className="row g-4">
+
+          {/* MONITORING, EVALUATION & LEARNING */}
+          <div className="col-md-6 col-lg-4">
+            <div className="skill-card">
+              <i className="bi bi-graph-up-arrow skill-icon text-success"></i>
+              <h5>Monitoring, Evaluation & Learning (MEL)</h5>
+              <p>Current professional focus as a MEL Officer (Intern) at the Rice Council of Tanzania (RCT)</p>
+            </div>
+          </div>
 
           {/* PYTHON */}
           <div className="col-md-6 col-lg-4">
